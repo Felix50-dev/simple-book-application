@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a new book"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:id="@+id/txtAddNewBook"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your book details"
+        android:textStyle="bold"
+        android:id="@+id/txtBookDetails"
+        android:layout_below="@id/txtAddNewBook"
+        android:layout_marginTop="25dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtBookDetails"
+        android:hint="name"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTxtName"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTxtName"
+        android:layout_marginTop="15dp"
+        android:hint="Author"
+        android:id="@+id/editTxtAuthor"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pages"
+        android:layout_below="@id/editTxtAuthor"
+        android:layout_marginTop="15dp"
+        android:id="@+id/editTxtPages"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="shortDescription"
+        android:layout_below="@id/editTxtPages"
+        android:lines="2"
+        android:id="@+id/editTxtShortDescription"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_below="@id/editTxtShortDescription"
+        android:hint="long Description"
+        android:id="@+id/editTxtLongDescription"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTxtImageUrl"
+        android:hint="imageUrl"
+        android:layout_below="@id/editTxtLongDescription"
+        android:lines="3"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:id="@+id/btnAdd"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:text="cancel"
+            android:layout_toRightOf="@id/btnAdd"
+            android:layout_marginLeft="30sp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

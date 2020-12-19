@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity"
+    android:padding="10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/firstRelativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTitle"
+                    android:text="title"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageViewIcon"
+                    android:src="@drawable/ic_star"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageViewEmptyStar"
+                    android:src="@drawable/ic_empty_star"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/firstRelativeLayout"
+                android:layout_marginTop="15dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="add to library"
+                    android:background="#00BCD4"
+                    android:id="@+id/btnAddToLibrary"/>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/imageView"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_below="@id/btnAddToLibrary"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtViewShortDescription"
+                    android:text="a short description"
+                    android:layout_below="@id/imageView"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtAuthor"
+                    android:text="author :"
+                    android:layout_below="@id/txtViewShortDescription"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtViewShortDescription"
+                    android:id="@+id/txtViewAuthor"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/txtAuthor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pages :"
+                    android:id="@+id/txtPages"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/txtAuthor"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtAuthor"
+                    android:id="@+id/txtViewPages"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/txtPages" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLanguage"
+                    android:text="language :"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/txtPages"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtViewLanguage"
+                    android:layout_below="@+id/txtPages"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/txtLanguage"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtLongDesc"
+                    android:text="long description"
+                    android:layout_below="@id/txtLanguage"
+                    android:layout_marginTop="5dp"
+                    android:textSize="15sp"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLongDesc"
+                    android:text="already read"
+                    android:background="#00BCD4"
+                    android:id="@+id/btnAlreadyRead"
+                    android:layout_marginTop="15dp"/>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
